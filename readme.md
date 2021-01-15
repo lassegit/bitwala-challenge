@@ -29,6 +29,8 @@ Scaffolding from `create-react-app`. Folder overview:
 ├── containers (stateful components)
 │   ├── Block
 │   ├── Blocks
+│   │   ├── Blocks.spec.tsx (short integration test example)
+│   │   └── Blocks.tsx
 │   └── Transactions
 ├── index.tsx
 ├── mocks (mock API call for integration testing)
