@@ -1,6 +1,6 @@
 ### Bitwala coding challenge
 
-I wanted to both solve the assignment and show/discuss how I would structure a project (be it React or React Native) to ensure code quality and best testing practices. Additionally I have used similar setup to Bitwala: Typescript, React, Apollo, Graphql. The app includes:
+I wanted to both solve the assignment and show/discuss how I would structure a project/development process (be it React or React Native) to ensure code quality and best testing practices. I have used similar setup to Bitwala: Typescript, React, Apollo, Graphql. Most libraries functions with both React and React Native. The app includes:
 
 - front page with list of blocks `(url: /)`
 - individual block page `(url: /blocks/:height)`
@@ -42,7 +42,7 @@ Scaffolding from `create-react-app`. Folder overview:
     └── theme.ts (shared theme settings, could add dark/light theme if wanted)
 ```
 
-Commands:
+#### Commands:
 
 - `yarn start` runs the app
 - `yarn storybook` runs storybook
@@ -51,10 +51,10 @@ Commands:
 
 #### Code
 
-- Typescript
-- Prettier for code formatting
-- ESLint for catching bugs and maintain code quality
-- Husky/Lint-staged for enforcing ESLint pre-commit
+- Typescript (v. 4.1.3)
+- [Prettier](https://prettier.io/) for code formatting
+- [ESLint](https://eslint.org/) for catching bugs and maintain code quality
+- [Husky](https://typicode.github.io/husky)/[Lint-staged](https://github.com/okonet/lint-staged) for enforcing ESLint pre-commit
 
 ### On testing: Unit test and integration test
 
@@ -66,20 +66,20 @@ Cornerstone of contentious deployment is testing, because it gives the confidenc
 
 #### Design and workflow
 
-- Storybook for isolated components development. In practical terms, this means developers can build all the sub components of a given feature, merge them into master and then finally focus on implementing them into the site. This secures, smaller and focused PRs, continuously flow and helps componentize properly. Additionally, storybook can be deployed for designers, product managers and developers to use.
-- Rebass for fast and customizable components
-- Styled Components
+- [Storybook](https://storybook.js.org/) for isolated component development. In practical terms, this means developers can build all the sub components of a given feature, merge them into master and then finally focus on implementing them into the site. This secures, smaller and focused PRs, continuously flow and helps componentize properly. Additionally, storybook can be deployed for designers, product managers and developers to use.
+- [Rebass](https://rebassjs.org/) for fast and customizable components
+- [Styled Components](https://styled-components.com/)
 
 #### Data
 
-- Appolo client
+- [Apollo client](https://www.apollographql.com/docs/react/) for React
 
 ### Further considerations and notes
 
 - logging and app monitoring can be done via Sentry (both React and React Native)
-- can be hosted on a simple CDN since it isn't server side rendered (SSR is however to be preferred e.g. NextJS)
+- can be hosted on a simple CDN since it isn't server side rendered (SSR is however to be preferred e.g. NextJS and hosted on E2C instances)
 
-Disclaimer: I tried to keep it short and within the scope of this assignment. Questions welcome.
+Disclaimer: There was a lot to talk about but tried to limit it as much as possible and keep it within the scope of this assignment. Questions welcome.
 
 ### Screenshot
 
