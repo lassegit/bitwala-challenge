@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/bitwala-challenge/static/js/main.9f486233.chunk.js",
+    "main.js.map": "/bitwala-challenge/static/js/main.9f486233.chunk.js.map",
+    "runtime-main.js": "/bitwala-challenge/static/js/runtime-main.03269a0b.js",
+    "runtime-main.js.map": "/bitwala-challenge/static/js/runtime-main.03269a0b.js.map",
+    "static/js/2.e1faee72.chunk.js": "/bitwala-challenge/static/js/2.e1faee72.chunk.js",
+    "static/js/2.e1faee72.chunk.js.map": "/bitwala-challenge/static/js/2.e1faee72.chunk.js.map",
+    "index.html": "/bitwala-challenge/index.html",
+    "static/js/2.e1faee72.chunk.js.LICENSE.txt": "/bitwala-challenge/static/js/2.e1faee72.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03269a0b.js",
+    "static/js/2.e1faee72.chunk.js",
+    "static/js/main.9f486233.chunk.js"
+  ]
+}
