@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloProvider } from '@apollo/client';
 import { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// HashRouter used to accommodate hosting on github page
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import GlobalStyles from './utils/GlobalStyles';
 import apolloClient from './utils/apolloClient';
 // Creating a "theme switch" for the ThemeProvider
@@ -17,14 +18,14 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <ApolloProvider client={apolloClient}>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={Blocks} />
             <Route exact path="/transactions" component={Transactions} />
             <Route path="/blocks/:id" component={Block} />
           </Switch>
           <GlobalStyles />
-        </BrowserRouter>
+        </HashRouter>
       </ApolloProvider>
     </ThemeProvider>
   </React.StrictMode>,

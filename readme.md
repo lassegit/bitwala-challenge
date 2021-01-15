@@ -4,7 +4,9 @@ I wanted to both solve the assignment and show/discuss how I would structure a p
 
 - front page with list of blocks `(url: /)`
 - individual block page `(url: /blocks/:height)`
-- list of transactions `(url: /transactions)`.
+- list of transactions `(url: /transactions)`
+
+Deployed on: http://lasse.tech/bitwala-challenge/ (If some values don't show up, it is likely because it is slow loading)
 
 ### Structure
 
@@ -78,3 +80,7 @@ Cornerstone of contentious deployment is testing, because it gives the confidenc
 - can be hosted on a simple CDN since it isn't server side rendered (SSR is however to be preferred e.g. NextJS)
 
 Disclaimer: I tried to keep it short and within the scope of this assignment. Questions welcome.
+
+### Screenshot
+
+![Alt text](public/screenshot.jpg?raw=true 'Screenshot')
